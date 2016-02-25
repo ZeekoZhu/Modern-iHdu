@@ -1,0 +1,50 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("http://i.hdu.edu.cn/") {
+  
+/*   要删除的内容 */
+  
+  
+  /*要显示的内容*/
+  #addTrain,
+  .app_btn_gray_name,
+  .user_name
+  {
+    visibility: visible!important;
+    display: block!important;
+  }
+  /*被隐藏的内容*/
+  #header,
+  #homeMiddelBannerWidet-content,
+  #wk_fourHomeWidget-content,
+  #wk_weatherHomeWidget-content,
+  .left,
+  .work_windows,
+  .app_list_btn_box,
+  .application_list_explain,
+/*   .hp_title, */
+  .wk_midpimwidget,
+  #footer,
+  .app_btn_gray_gear,
+  div.quickhome_title.hp_title,
+  #wk_calendarHomeWidget-content,
+  .application_list_title,
+  .wk_applicationlistwidget,
+  .user_brief_info,
+  #innerdiv:first-child,
+  .circle_space_left,
+  li [train_id] :not(.last)
+  {
+    visibility: hidden !important;
+/*     display: none; */
+  }
+
+    /*要显示的内容*/
+  #addTrain,
+  .app_btn_gray_name,
+  .user_name
+  {
+    visibility: visible!important;
+    display: block!important;
+  }
+  }
