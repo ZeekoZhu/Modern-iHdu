@@ -1,6 +1,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document url-prefix("http://i.hdu.edu.cn/") {
+  /*Modern iHdu*/
   
 /*   要删除的内容 */
   
@@ -13,6 +14,7 @@
     visibility: visible!important;
     display: block!important;
   }
+
   /*被隐藏的内容*/
   #header,
   #homeMiddelBannerWidet-content,
@@ -22,7 +24,6 @@
   .work_windows,
   .app_list_btn_box,
   .application_list_explain,
-/*   .hp_title, */
   .wk_midpimwidget,
   #footer,
   .app_btn_gray_gear,
@@ -36,7 +37,6 @@
   li [train_id] :not(.last)
   {
     visibility: hidden !important;
-/*     display: none; */
   }
 
     /*要显示的内容*/
