@@ -2,6 +2,7 @@
 
 @-moz-document url-prefix("http://i.hdu.edu.cn/") {
   
+<<<<<<< HEAD
 /*   要删除的内容 */
   /*nothing to change*/
   
@@ -14,6 +15,9 @@
     display: block!important;
   }
 
+=======
+  
+>>>>>>> 615cd1001f7ffd555069eb490a8538b69b3f4c11
   /*被隐藏的内容*/
   #header,
   #homeMiddelBannerWidet-content,
@@ -33,17 +37,147 @@
   .user_brief_info,
   #innerdiv:first-child,
   .circle_space_left,
-  li [train_id] :not(.last)
+  li [train_id] :not(.last),
+  #head_sculpture,
+  a[src*="3668"]
   {
+<<<<<<< HEAD
     visibility: hidden !important;
+=======
+    visibility: hidden  !important;
+>>>>>>> 615cd1001f7ffd555069eb490a8538b69b3f4c11
   }
 
+  
+  #header,
+  #footer,
+  .quickhome_list
+  {
+    display: none;
+  }
+  
+  #innerdiv
+  {
+    height: 480px;
+  }
+  
+  .margin_bottom_10,
+  .margin_top_10,
+  #outdiv,
+  #container_content,
+  #container
+  
+  {
+    visibility: hidden;
+  }
+  
+  
     /*要显示的内容*/
   #addTrain,
-  .app_btn_gray_name,
+  .user_name a,
+  .meeting_notice_content,
+  .quickhome_item_link font,
+  .links,
+  span.highlight,
+  .quickhome_item_close,
+  #addTrain,
   .user_name
   {
-    visibility: visible!important;
-    display: block!important;
+    visibility: visible !important;
+    display: block !important;
   }
+  
+/*   自定义Style开始 */
+  
+  body{
+    background-color: black;
+    margin: 0px;
+    padding: 0px !important;
+  } /*黑色背景*/
+  
+  a[appid~="4080"],
+  a[appid~="1142"],
+  li.unreadmail,
+  .meeting_notice_content
+  {
+    visibility: visible !important;
+    display: block !important;
+    background-color: #0078d7;
+    width: 18% !important;
+    height: 16% !important;
+    position: absolute;
+    float: left !important;
+    margin: auto !important;
+    padding: 0px !important;
+    border: none;
+    top: 20%;
   }
+  
+  .meeting_notice_content{
+    left: 10%;
+  }
+  
+  li.unreadmail{
+    left: 31%;
+  }
+/*  未读邮件  */
+  
+  
+  a[appid~="1142"]{
+    left: 52%;
+  }
+/*  选课系统  */
+  
+  
+    a[appid~="4080"]{
+    left: 73%;
+  }
+/*  银校通  */
+  
+  .meeting_notice_title highlight,
+  .number_blue,
+  .span_gray_letter,
+  sign_blue
+  {
+    color: tan !important;;
+  }/*  临时字体颜色  */
+  
+  a:visited,
+  a:link,
+  .label,
+  .highlight
+  {
+    color: tan !important;
+    text-decoration:none;
+  }/*  链接颜色  */
+  
+  .user_name a{
+    position: fixed;
+    top:10%;
+    left:75%;
+  }/*  用户名  */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*    */
+}
