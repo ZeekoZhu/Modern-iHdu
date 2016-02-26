@@ -2,22 +2,6 @@
 
 @-moz-document url-prefix("http://i.hdu.edu.cn/") {
   
-<<<<<<< HEAD
-/*   要删除的内容 */
-  /*nothing to change*/
-  
-  /*要显示的内容*/
-  #addTrain,
-  .app_btn_gray_name,
-  .user_name
-  {
-    visibility: visible!important;
-    display: block!important;
-  }
-
-=======
-  
->>>>>>> 615cd1001f7ffd555069eb490a8538b69b3f4c11
   /*被隐藏的内容*/
   #header,
   #homeMiddelBannerWidet-content,
@@ -41,11 +25,7 @@
   #head_sculpture,
   a[src*="3668"]
   {
-<<<<<<< HEAD
-    visibility: hidden !important;
-=======
     visibility: hidden  !important;
->>>>>>> 615cd1001f7ffd555069eb490a8538b69b3f4c11
   }
 
   
