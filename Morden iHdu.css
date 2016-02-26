@@ -2,7 +2,7 @@
 
 @-moz-document url-prefix("http://i.hdu.edu.cn/") {
   
-  
+
   /*被隐藏的内容*/
   #header,
   #homeMiddelBannerWidet-content,
@@ -12,7 +12,6 @@
   .work_windows,
   .app_list_btn_box,
   .application_list_explain,
-/*   .hp_title, */
   .wk_midpimwidget,
   #footer,
   .app_btn_gray_gear,
