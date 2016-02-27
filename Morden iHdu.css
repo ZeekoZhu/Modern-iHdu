@@ -15,7 +15,7 @@
 /*   .hp_title, */
   .wk_midpimwidget,
   #footer,
-  .app_btn_gray_gear,
+/*   .app_btn_gray_gear, */
   div.quickhome_title.hp_title,
   #wk_calendarHomeWidget-content,
   .application_list_title,
@@ -87,7 +87,7 @@
   .sign_blue
   {
     visibility: visible !important;
-    display: block !important;
+    display: inline;
     background-color: #0078d7;
     width: 18% !important;
     height: 16% !important;
@@ -218,11 +218,22 @@
   {
     left: 52%;
     background-color: #0078d7 !important;
+     vertical-align: bottom !important;
   }/*  系统磁贴  */
+  
+  div[appid~="1142"] a.app_btn_gray_gear
+  {
+    display: inline !important;
+/*     box-shadow: 10px 10px 10px white; */
+    position: absolute !important;
+    bottom: 0 ;
+    right: 0;
+  }
   
   
   a[appid~="1142"]{
-    position: static;
+    display: inline !important;
+    position: absolute !important;
     border: none;
     background: none;
     color: black;
@@ -230,7 +241,19 @@
     font-family: 微软雅黑;
     bottom: 0;
     right: 0;
-    
+/*     margin: auto 0 auto 0 !important; */
+/*     width: 100% !important;
+    height: 100% !important; */
+/*     vertical-align: bottom !important; */
+  }
+  
+  div[appid~="1142"] a.app_btn_gray_name{
+/*     box-shadow: 10px 10px 10px white; */
+/*     vertical-align: bottom !important; */
+    display: inline !important;
+    width: 100% !important;
+    height: 100%!important;
+    align-content: flex-end;
   }
   
  /*  
