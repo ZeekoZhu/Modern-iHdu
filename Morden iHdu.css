@@ -2,7 +2,7 @@
 
 @-moz-document url-prefix("http://i.hdu.edu.cn/") {
   
-
+  
   /*被隐藏的内容*/
   #header,
   #homeMiddelBannerWidet-content,
@@ -12,6 +12,7 @@
   .work_windows,
   .app_list_btn_box,
   .application_list_explain,
+/*   .hp_title, */
   .wk_midpimwidget,
   #footer,
   .app_btn_gray_gear,
@@ -24,7 +25,10 @@
   .circle_space_left,
   li [train_id] :not(.last),
   #head_sculpture,
-  a[src*="3668"]
+  a[src*="3668"],
+  .meeting_notice_content,
+  .meeting_notice_title,
+  .highlight
   {
     visibility: hidden  !important;
   }
@@ -32,7 +36,8 @@
   
   #header,
   #footer,
-  .quickhome_list
+  .post_close,
+  #addEmail
   {
     display: none;
   }
@@ -76,10 +81,10 @@
     padding: 0px !important;
   } /*黑色背景*/
   
-  a[appid~="4080"],
-  a[appid~="1142"],
+  div[appid~="1142"],
+  div[appid~="4080"],
   li.unreadmail,
-  .meeting_notice_content
+  .sign_blue
   {
     visibility: visible !important;
     display: block !important;
@@ -87,51 +92,164 @@
     width: 18% !important;
     height: 16% !important;
     position: absolute;
-    float: left !important;
-    margin: auto !important;
-    padding: 0px !important;
+    margin: 0 !important;
+    padding: 0 !important;
     border: none;
     top: 20%;
+  }/*  主磁贴*4  */
+  
+  
+ /*  
+  *==================一卡通开始==================
+  */
+  .number_blue,
+  .span_gray_letter
+  {
+    height: 1.2em;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: absolute !important;
+    bottom: 0.3em;
+    font-size: 150%;
+    font-family: 微软雅黑;
+    color: black !important;
   }
+  /*  余额 XXX   元  */
+  
+  .number_blue{
+    position: absolute !important;
+    right: 1.6em;
+    bottom: 0.4em;
+  }
+/*  数字  */
+  
+  .span_gray_letter{
+    right: 0.3em;
+  }
+/*  元  */
+  
+  
+  a.sign_blue:link{
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+    color: rgba(0,0,0,0) !important;
+  }
+/*  点击元素，详情  */
+  
   
   .meeting_notice_content{
+    position: fixed !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    top: 20%;
     left: 10%;
+    width: 18% !important;
+    height: 16%;
+    background-color: #0078d7;
   }
+  
+ /*
+  *==================一卡通结束==================
+  */
+  
+  
+  
+  
+ /*  
+  *==================邮件开始==================
+  */
   
   li.unreadmail{
     left: 31%;
-  }
-/*  未读邮件  */
+  }/*  磁贴位置  */
+  
+  .count{
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
+    margin: 0 !important;
+  }/*  未读计数  */
+  
+  
+  span.highlight{
+    color: black !important;
+  }/*  强制设置计数字体颜色  */
+  
+  
+  span.label{
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
+    margin: 0 !important;
+    font-size: 150% !important;
+    font-family: 微软雅黑;
+    color: black !important;
+    width: 4em !important;
+    bottom: 0.2em;
+    right: 1.6em;
+  }/*    未读邮件 四字    */
+  
+  
+  div.links :nth-child(3)
+  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: rgba(0,0,0,0) !important;
+  }/*  点击元素  */
+  
+ /*  
+  *==================邮件结束==================
+  */
+  
+  
+  
+ /*  
+  *==================选课系统开始==================
+  */
+  .app_btn_gray{
+    background: none !important;
+  }/*  强制取消按钮背景  */
+  
+  div[appid~="1142"]
+  {
+    left: 52%;
+    background-color: #0078d7 !important;
+  }/*  系统磁贴  */
   
   
   a[appid~="1142"]{
-    left: 52%;
+    position: static;
+    border: none;
+    background: none;
+    color: black;
+    font-size: 150%;
+    font-family: 微软雅黑;
+    bottom: 0;
+    right: 0;
+    
   }
-/*  选课系统  */
   
+ /*  
+  *==================选课系统结束==================
+  */
   
-    a[appid~="4080"]{
+  div[appid~="4080"]
+  {
     left: 73%;
+    background-color: #0078d7 !important;
+  }/*  系统磁贴  */
+  
+  
+  a[appid~="4080"]{
+    left: 73% !important;
   }
 /*  银校通  */
   
-  .meeting_notice_title highlight,
-  .number_blue,
-  .span_gray_letter,
-  sign_blue
-  {
-    color: tan !important;;
-  }/*  临时字体颜色  */
-  
-  a:visited,
-  a:link,
-  .label,
-  .highlight
-  {
-    color: tan !important;
-    text-decoration:none;
-  }/*  链接颜色  */
-  
+
   .user_name a{
     position: fixed;
     top:10%;
