@@ -15,7 +15,7 @@
 /*   .hp_title, */
   .wk_midpimwidget,
   #footer,
-/*   .app_btn_gray_gear, */
+  .app_btn_gray_gear,
   div.quickhome_title.hp_title,
   #wk_calendarHomeWidget-content,
   .application_list_title,
@@ -37,10 +37,19 @@
   #header,
   #footer,
   .post_close,
-  #addEmail
+  #addEmail,
+  
+  
+/*  TODO ===============================
+    附加功能磁贴
+  */
+  #addTrain,
+  #TRAIN
   {
     display: none;
   }
+/*  ====================================  */
+  
   
   #innerdiv
   {
@@ -59,14 +68,12 @@
   
   
     /*要显示的内容*/
-  #addTrain,
   .user_name a,
   .meeting_notice_content,
   .quickhome_item_link font,
   .links,
   span.highlight,
   .quickhome_item_close,
-  #addTrain,
   .user_name
   {
     visibility: visible !important;
@@ -221,40 +228,35 @@
      vertical-align: bottom !important;
   }/*  系统磁贴  */
   
-  div[appid~="1142"] a.app_btn_gray_gear
-  {
-    display: inline !important;
-/*     box-shadow: 10px 10px 10px white; */
-    position: absolute !important;
-    bottom: 0 ;
-    right: 0;
-  }
-  
   
   a[appid~="1142"]{
-    display: inline !important;
-    position: absolute !important;
-    border: none;
     background: none;
+  }
+  
+
+  div[appid~="1142"] a.app_btn_gray_name{
+    color: rgba(0,0,0,0);
+    display: block !important;
+    width: 100%;
+    height: 100%;
+  }
+/*  原来的a标签，需要利用它的链接，但不易改变文字位置。故构造一个儿子，令它的儿子显示文字标签。
+    a标签自身近提供点击功能
+  */
+  
+  div[appid~="1142"] a.app_btn_gray_name:before{
+    content: "选课系统";
+    display: block;
+    position: absolute;
+    bottom: 0.2em;
+    right: 0.2em;
     color: black;
     font-size: 150%;
     font-family: 微软雅黑;
-    bottom: 0;
-    right: 0;
-/*     margin: auto 0 auto 0 !important; */
-/*     width: 100% !important;
-    height: 100% !important; */
-/*     vertical-align: bottom !important; */
   }
+/*  a标签的儿子标签 ，选课系统 四个字 */
   
-  div[appid~="1142"] a.app_btn_gray_name{
-/*     box-shadow: 10px 10px 10px white; */
-/*     vertical-align: bottom !important; */
-    display: inline !important;
-    width: 100% !important;
-    height: 100%!important;
-    align-content: flex-end;
-  }
+  
   
  /*  
   *==================选课系统结束==================
@@ -267,16 +269,43 @@
   }/*  系统磁贴  */
   
   
+  
   a[appid~="4080"]{
-    left: 73% !important;
+    background: none;
   }
+  
+
+  div[appid~="4080"] a.app_btn_gray_name{
+    color: rgba(0,0,0,0);
+    display: block !important;
+    width: 100%;
+    height: 100%;
+  }
+/*  原来的a标签，需要利用它的链接，但不易改变文字位置。故构造一个儿子，令它的儿子显示文字标签。
+    a标签自身近提供点击功能
+  */
+  
+  div[appid~="4080"] a.app_btn_gray_name:before{
+    content: "银校通";
+    display: block;
+    position: absolute;
+    bottom: 0.2em;
+    right: 0.2em;
+    color: black;
+    font-size: 150%;
+    font-family: 微软雅黑;
+  }
+/*  a标签的儿子标签 ，选课系统 四个字 */
+  
+  
 /*  银校通  */
   
 
   .user_name a{
+    font-size: 200%;
     position: fixed;
-    top:10%;
-    left:75%;
+    top:8%;
+    right: 9%;
   }/*  用户名  */
   
   
