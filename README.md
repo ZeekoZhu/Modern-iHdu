@@ -7,7 +7,7 @@
 - Modern 磁贴风格，强化移动设备交互体验
 - 去除了原先数字杭电大量的已经死亡冗余功能，只保留最常用的功能入口
 - 可以直接在 [https://userstyles.org/styles/124778/modern-ihdu](https://userstyles.org/styles/124778/modern-ihdu) 添加这个stylish。
-- 更多的磁铁功能将会很快加入
+- 更多的磁贴功能将会很快加入
 
 ##使用注意
 使用这个 stylish 之前，需要把 `选课系统` `银校通` 功能放在常用功能区
