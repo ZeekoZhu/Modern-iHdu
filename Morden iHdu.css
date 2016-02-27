@@ -118,7 +118,7 @@
     position: absolute !important;
     bottom: 0.3em;
     font-size: 150%;
-    font-family: 微软雅黑;
+    font-family: 黑体;
     color: black !important;
   }
   /*  余额 XXX   元  */
@@ -157,6 +157,18 @@
     background-color: #0078d7;
   }
   
+  div a.sign_blue:after{
+    content: "";
+    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/ModerniHduCampusCard.png);
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: visible !important;
+  }
  /*
   *==================一卡通结束==================
   */
@@ -177,12 +189,13 @@
     bottom: 0;
     right: 0;
     margin: 0 !important;
-  }/*  未读计数  */
+  }/*  未读计数位置  */
   
   
   span.highlight{
     color: black !important;
-  }/*  强制设置计数字体颜色  */
+    font-family: 黑体;
+  }/*  强制设置计数字体和颜色  */
   
   
   span.label{
@@ -191,7 +204,7 @@
     right: 0;
     margin: 0 !important;
     font-size: 150% !important;
-    font-family: 微软雅黑;
+    font-family: 黑体;
     color: black !important;
     width: 4em !important;
     bottom: 0.2em;
@@ -207,6 +220,21 @@
     left: 0;
     color: rgba(0,0,0,0) !important;
   }/*  点击元素  */
+  
+  div.links :nth-child(3):after{
+    content: "";
+    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/ModerniHduMail.png);
+/*     background-color: red; */
+    background-position: 50% 26%;
+    background-repeat: no-repeat;
+    background-size: auto 40%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: visible !important;
+  }
+  
   
  /*  
   *==================邮件结束==================
@@ -249,17 +277,33 @@
     display: block;
     position: absolute;
     bottom: 0.2em;
-    right: 0.2em;
+    right: 0.3em;
     color: black;
     font-size: 150%;
-    font-family: 微软雅黑;
+    font-family: 黑体;
   }
 /*  a标签的儿子标签 ，选课系统 四个字 */
   
+  div[appid~="1142"] a.app_btn_gray_name:after{
+    content: "";
+    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/ModerniHduCourceSelectionSystem.png);
+    background-position: 50% 7%;
+    background-repeat: no-repeat;
+    background-size: auto 46%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: visible !important;
+  }
   
   
  /*  
   *==================选课系统结束==================
+  */
+  
+ /*  
+  *==================银校通开始==================
   */
   
   div[appid~="4080"]
@@ -290,18 +334,35 @@
     display: block;
     position: absolute;
     bottom: 0.2em;
-    right: 0.2em;
+    right: 0.3em;
     color: black;
     font-size: 150%;
-    font-family: 微软雅黑;
+    font-family: 黑体;
   }
 /*  a标签的儿子标签 ，选课系统 四个字 */
   
+  div[appid~="4080"] a.app_btn_gray_name:after{
+    content: "";
+    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/ModerniHduTuition.png);
+    background-position: 50% -15%;
+    background-repeat: no-repeat;
+    background-size: auto 65%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: visible !important;
+  }
   
-/*  银校通  */
+ /*  
+  *==================银校通结束==================
+  */
   
 
   .user_name a{
+    text-decoration: none;
+    font-weight: normal;
+    color: #aaaaaa !important;
     font-size: 200%;
     position: fixed;
     top:8%;
