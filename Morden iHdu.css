@@ -12,7 +12,6 @@
   .work_windows,
   .app_list_btn_box,
   .application_list_explain,
-/*   .hp_title, */
   .wk_midpimwidget,
   #footer,
   .app_btn_gray_gear,
@@ -29,45 +28,39 @@
   .meeting_notice_content,
   .meeting_notice_title,
   .highlight
+  .margin_bottom_10,
+  .margin_top_10,
+  #outdiv,
+  #container
   {
     visibility: hidden  !important;
   }
-
   
   #header,
   #footer,
   .post_close,
-  #addEmail,
+  #addEmail
+  /*  TODO ：附加功能磁贴====================*/
   
-  
-/*  TODO ===============================
-    附加功能磁贴
-  */
   #addTrain,
   #TRAIN
+  
+  /*  ======================================*/
   {
     display: none;
   }
-/*  ====================================  */
-  
-  
-  #innerdiv
+
+  #container_content
   {
-    height: 480px;
+    height: 0px !important;
+    width: 0px !important;
+    min-height: 0;
+    min-width: 0;
   }
-  
-  .margin_bottom_10,
-  .margin_top_10,
-  #outdiv,
-  #container_content,
-  #container
-  
-  {
-    visibility: hidden;
-  }
+  /*  减小页面宽度和高度  */
   
   
-    /*要显示的内容*/
+  /*要显示的内容*/
   .user_name a,
   .meeting_notice_content,
   .quickhome_item_link font,
@@ -91,14 +84,16 @@
   div[appid~="1142"],
   div[appid~="4080"],
   li.unreadmail,
-  .sign_blue
+  div.meeting_notice_content
   {
     visibility: visible !important;
-    display: inline;
+    /*display: inline;*/
     background-color: #0078d7;
     width: 18% !important;
-    height: 16% !important;
-    position: absolute;
+    min-width: 120px;
+    height: 20% !important;
+    min-height: 130px;
+    position: absolute !important;
     margin: 0 !important;
     padding: 0 !important;
     border: none;
@@ -109,6 +104,12 @@
  /*  
   *==================一卡通开始==================
   */
+  div.meeting_notice_content{
+    left: 10%;
+  }
+/*  主div  */
+  
+  
   .number_blue,
   .span_gray_letter
   {
@@ -116,46 +117,37 @@
     padding: 0 !important;
     margin: 0 !important;
     position: absolute !important;
-    bottom: 0.3em;
     font-size: 150%;
     font-family: 黑体;
     color: black !important;
   }
-  /*  余额 XXX   元  */
+  /*  余额 XXX   元   */
   
   .number_blue{
     position: absolute !important;
-    right: 1.6em;
-    bottom: 0.4em;
+    right: 1.8em;
+    bottom: 0.45em;
   }
 /*  数字  */
   
   .span_gray_letter{
-    right: 0.3em;
+    right: 0.5em;
+    bottom: 0.3em;
   }
 /*  元  */
   
-  
-  a.sign_blue:link{
-    left: 0;
-    top: 0;
-    width: 100% !important;
-    height: 100% !important;
-    color: rgba(0,0,0,0) !important;
-  }
-/*  点击元素，详情  */
-  
-  
-  .meeting_notice_content{
-    position: fixed !important;
+  a.sign_blue{
+    position: absolute !important;
     margin: 0px !important;
     padding: 0px !important;
-    top: 20%;
-    left: 10%;
-    width: 18% !important;
-    height: 16%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(0,0,0,0) !important;
     background-color: #0078d7;
   }
+/*  点击元素  */
+  
   
   div a.sign_blue:after{
     content: "";
@@ -184,17 +176,23 @@
     left: 31%;
   }/*  磁贴位置  */
   
-  .count{
+  div.count{
     position: absolute !important;
+    right: 0.5em;
     bottom: 0;
-    right: 0;
     margin: 0 !important;
+    padding: 0 !important;
   }/*  未读计数位置  */
   
   
   span.highlight{
     color: black !important;
     font-family: 黑体;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    margin: 0 !important;
+    height: 1em;
   }/*  强制设置计数字体和颜色  */
   
   
@@ -207,7 +205,7 @@
     font-family: 黑体;
     color: black !important;
     width: 4em !important;
-    bottom: 0.2em;
+    bottom: 0.15em;
     right: 1.6em;
   }/*    未读邮件 四字    */
   
@@ -224,12 +222,12 @@
   div.links :nth-child(3):after{
     content: "";
     background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/ModerniHduMail.png);
-/*     background-color: red; */
-    background-position: 50% 26%;
+    background-position: 50% 45%;
     background-repeat: no-repeat;
     background-size: auto 40%;
     display: block;
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     visibility: visible !important;
@@ -245,9 +243,10 @@
  /*  
   *==================选课系统开始==================
   */
-  .app_btn_gray{
+  div.app_btn_gray,
+  div.app_btn_white{
     background: none !important;
-  }/*  强制取消按钮背景  */
+  }/*  强制取消按钮背景，包括所有 app 元素，这里是选课系统和银校通  */
   
   div[appid~="1142"]
   {
@@ -268,16 +267,18 @@
     width: 100%;
     height: 100%;
   }
-/*  原来的a标签，需要利用它的链接，但不易改变文字位置。故构造一个儿子，令它的儿子显示文字标签。
-    a标签自身近提供点击功能
-  */
+/**  
+  *原来的a标签，需要利用它的链接，但不易改变文字位置。故构造一个儿子，令它的儿子显示文字标签。
+  *a标签自身近提供点击功能
+  *
+  **/
   
   div[appid~="1142"] a.app_btn_gray_name:before{
     content: "选课系统";
     display: block;
     position: absolute;
     bottom: 0.2em;
-    right: 0.3em;
+    right: 0.5em;
     color: black;
     font-size: 150%;
     font-family: 黑体;
@@ -286,8 +287,8 @@
   
   div[appid~="1142"] a.app_btn_gray_name:after{
     content: "";
-    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/ModerniHduCourceSelectionSystem.png);
-    background-position: 50% 7%;
+    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/CourceSelectionSystem.png);
+    background-position: 50% 0%;
     background-repeat: no-repeat;
     background-size: auto 46%;
     display: block;
@@ -334,7 +335,7 @@
     display: block;
     position: absolute;
     bottom: 0.2em;
-    right: 0.3em;
+    right: 0.5em;
     color: black;
     font-size: 150%;
     font-family: 黑体;
@@ -344,9 +345,11 @@
   div[appid~="4080"] a.app_btn_gray_name:after{
     content: "";
     background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/ModerniHduTuition.png);
-    background-position: 50% -15%;
+    background-position: 50% 40%;
     background-repeat: no-repeat;
     background-size: auto 65%;
+    position: absolute !important;
+    top: 0;
     display: block;
     position: absolute;
     width: 100%;
@@ -358,7 +361,22 @@
   *==================银校通结束==================
   */
   
-
+  #TRAIN {
+    position: absolute !important;
+    background-color: white !important;
+    top: 38%;
+    right: 9%;
+    left: 10%;
+    height: 18%;
+    box-shadow: 10px 10px 10px white !important;
+    display: none;
+  }
+  
+  li[train_id~="2046"] {
+    background-color: white !important;
+  }
+  
+  
   .user_name a{
     text-decoration: none;
     font-weight: normal;
@@ -369,27 +387,4 @@
     right: 9%;
   }/*  用户名  */
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /*    */
 }
