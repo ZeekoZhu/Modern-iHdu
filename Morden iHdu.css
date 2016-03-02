@@ -42,8 +42,8 @@
   #addEmail
   /*  TODO ：附加功能磁贴====================*/
   
-  #addTrain,
-  #TRAIN
+/*   ,#addTrain,
+  #TRAIN */
   
   /*  ======================================*/
   {
@@ -85,9 +85,11 @@
   div[appid~="4080"],
   li.unreadmail,
   div.meeting_notice_content
+  
+/*   #TRAIN li */
+  
   {
     visibility: visible !important;
-    /*display: inline;*/
     background-color: #0078d7;
     width: 18% !important;
     min-width: 120px;
@@ -287,12 +289,13 @@
   
   div[appid~="1142"] a.app_btn_gray_name:after{
     content: "";
-    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/CourceSelectionSystem.png);
-    background-position: 50% 0%;
+    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/CSS.png);
+    background-position: 50% 40%;
     background-repeat: no-repeat;
     background-size: auto 46%;
     display: block;
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     visibility: visible !important;
@@ -361,22 +364,121 @@
   *==================银校通结束==================
   */
   
+ /*  
+  *==================自定义链接开始==================
+  */
+  
   #TRAIN {
     position: absolute !important;
-    background-color: white !important;
-    top: 38%;
+    margin: 0;
+    padding: 0;
+    top: 44.5%;
     right: 9%;
     left: 10%;
-    height: 18%;
-    box-shadow: 10px 10px 10px white !important;
-    display: none;
+    height: 50%;
+    width: 90%;
+    display: block;
   }
   
-  li[train_id~="2046"] {
-    background-color: white !important;
+/*   #TRAIN:before{
+    content: "()";
+    float:left;
+    position: relative;
+    width: 19.9%;
+    min-width: 120px;
+    height: 40%;
+    min-height: 130px;
+    background-color: white;
+    margin-right: 3.5%;
+  } */
+  
+  #TRAIN li,#TRAIN:before{
+    content: "()";
+    float: left;
+    position: relative;
+    background-color: #0078d7;
+    width: 19.95% !important;
+    min-width: 120px;
+    height: 40%;
+    min-height: 130px;
+    margin-right: 3.4%;
+    margin-bottom: 4.5%;
+    padding: 0;
+    border: none;
+  }
+  
+  #TRAIN li a{
+    position: absolute;
+    font-family: 黑体;
+    bottom: 0.4em;
+    right: 0.8em;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #TRAIN li a font {
+    font-size: 150%;
+    color: black;
+  }
+  
+  #TRAIN li:after{
+    content: " . ";
+    display: block;
+    color: #0078d7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    background-color: #0078d7;
+  }
+  
+  #TRAIN > li a.quickhome_item_link{
+    text-decoration: none;
+    content: "()";
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #TRAIN > li a font{
+    position: absolute;
+    bottom: 0.3em;
+    right: 0.1em;
+  }
+  
+  p.quickhome_item_close {
+    transition: 0.4s;
+    padding: 0;
+    margin: 0;
+    background-image: none;
+    width: 20%;
+    height: 20%;
+    transition: 0.4s;
+  }
+  
+  p.quickhome_item_close:hover:after{
+    transition: 0.4s;
+    content: "移除";
+    position: absolute;
+    top: 0.3em;
+    right: 0.6em;
+    font-family: 黑体;
+    font-size: 125%;
+    color: black;
+  }
+  
+  span.quick_title_right{
+    width: 50px !important;
+    height: 50px !important;
+    background-color: tan;
+    position: absolute;
   }
   
   
+  
+ /*  
+  *==================自定义链接结束==================
+  */
   .user_name a{
     text-decoration: none;
     font-weight: normal;
