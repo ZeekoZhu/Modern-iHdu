@@ -4,7 +4,8 @@
   
   
   /*被隐藏的内容*/
-  #header,
+  #header :not(.exit),
+  #container,
   #homeMiddelBannerWidet-content,
   #wk_fourHomeWidget-content,
   #wk_weatherHomeWidget-content,
@@ -40,12 +41,6 @@
   #footer,
   .post_close,
   #addEmail
-  /*  TODO ：附加功能磁贴====================*/
-  
-  #addTrain,
-  #TRAIN
-  
-  /*  ======================================*/
   {
     display: none;
   }
@@ -85,9 +80,11 @@
   div[appid~="4080"],
   li.unreadmail,
   div.meeting_notice_content
+  
+/*   #TRAIN li */
+  
   {
     visibility: visible !important;
-    /*display: inline;*/
     background-color: #0078d7;
     width: 18% !important;
     min-width: 120px;
@@ -288,11 +285,13 @@
   div[appid~="1142"] a.app_btn_gray_name:after{
     content: "";
     background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/CSS.png);
-    background-position: 50% 0%;
+
+    background-position: 50% 40%;
     background-repeat: no-repeat;
     background-size: auto 46%;
     display: block;
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     visibility: visible !important;
@@ -361,22 +360,160 @@
   *==================银校通结束==================
   */
   
+ /*  
+  *==================自定义链接开始==================
+  */
+  
   #TRAIN {
     position: absolute !important;
-    background-color: white !important;
-    top: 38%;
+    margin: 0;
+    padding: 0;
+    top: 44.5%;
     right: 9%;
     left: 10%;
-    height: 18%;
-    box-shadow: 10px 10px 10px white !important;
-    display: none;
-  }
-  
-  li[train_id~="2046"] {
-    background-color: white !important;
+    height: 50%;
+    width: 90%;
+    display: block;
   }
   
   
+  #TRAIN li
+/*   ,#TRAIN:before */
+  {
+    content: "()";
+    float: left;
+    position: relative;
+    background-color: #0078d7;
+    width: 19.95% !important;
+    min-width: 120px;
+    height: 40%;
+    min-height: 130px;
+    margin-right: 3.4%;
+    margin-bottom: 4.5%;
+    padding: 0;
+    border: none;
+  }
+  
+  #TRAIN li a{
+    position: absolute;
+    font-family: 黑体;
+    bottom: 0.4em;
+    right: 0.8em;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #TRAIN li a font {
+    font-size: 150%;
+    color: black;
+  }
+  
+  #TRAIN li:after{
+    content: " . ";
+    display: block;
+    color: #0078d7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    background-color: #0078d7;
+  }
+  
+  #TRAIN > li a.quickhome_item_link{
+    text-decoration: none;
+    content: "()";
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #TRAIN > li a font{
+    position: absolute;
+    bottom: 0.3em;
+    right: 0.1em;
+  }
+  
+  p.quickhome_item_close {
+    transition: 0.4s;
+    padding: 0;
+    margin: 0;
+    background-image: none;
+    width: 20%;
+    height: 20%;
+    transition: 0.4s;
+  }
+  
+  p.quickhome_item_close:hover:after{
+    transition: 0.4s;
+    content: "移除";
+    position: absolute;
+    top: 0.3em;
+    right: 0.6em;
+    font-family: 黑体;
+    font-size: 125%;
+    color: black;
+  }
+  
+/*  ==========添加按钮开始==========  */
+  
+  span.quick_title_right{
+    visibility: visible;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1%;
+    background-color:black;
+    color: white;
+    font-size: 150%;
+    transition: 0.4s;
+    z-index:7;
+  }
+  
+  span.quick_title_right:hover{
+    height: 16%;
+    background-color:  #003366;
+  }
+  
+  #addTrain{
+    font-family: 黑体;
+    position: absolute;
+    background-color: rgba(255,255,255,0);
+    border: 2px solid black;
+    height: 84.5%;
+    width: 8%;
+    top: 6%;
+    margin: 0;
+    left: 5%;
+    color: rgba(0,0,0,0) !important;
+  }
+  
+  
+  #addTrain:after{
+    position: absolute;
+    left: 0;
+    top: 25%;
+    height: 100%;
+    width: 100%;
+    content: "+";
+    font-size: 500%;
+    text-align: center;
+    color: black;
+  }
+  
+  #addTrain:before{
+    content: "添加";
+    text-decoration: none;
+    color: black !important;
+    position: absolute;
+    bottom: 0.5em;
+    right: calc( 50% - 1em );
+  }
+  
+  
+ /*  
+  *==================自定义链接结束==================
+  */
   .user_name a{
     text-decoration: none;
     font-weight: normal;
@@ -387,4 +524,10 @@
     right: 9%;
   }/*  用户名  */
   
+
+  a.exit{
+    visibility: visible !important;
+    display: block !important;
+    background-color: white;
+  }
 }
