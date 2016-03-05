@@ -440,7 +440,6 @@
 /*  下方的菜单横条，未激活状态  */
   
   span.quick_title_right:hover{
-/*     visibility: visible !important; */
     height: 16%;
     bottom: 0;
     background-color:  #0055aa;
@@ -455,7 +454,7 @@
     height: 84.5%;
     max-height: 130px;
     width: 8%;
-    bottom: 0%;
+    bottom: 6%;
     margin: 0;
     left: 5%;
     color: rgba(0,0,0,0) !important;
@@ -467,6 +466,7 @@
     left: 0;
     height: 100%;
     width: 100%;
+    top: 20%;
     content: "+";
     font-size: 500%;
     text-align: center;
