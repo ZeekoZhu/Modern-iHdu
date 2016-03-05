@@ -26,7 +26,7 @@
   a[src*="3668"],
   .meeting_notice_content,
   .meeting_notice_title,
-  .highlight
+  .highlight,
   .margin_bottom_10,
   .margin_top_10,
   #outdiv,
@@ -143,10 +143,10 @@
   
   div a.sign_blue:after{
     content: "";
-    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/ModerniHduCampusCard.png);
-    background-position: 50% 15%;
+    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/CampusCard_b.png);
+    background-position: 50% 20%;
     background-repeat: no-repeat;
-    background-size: auto 50%;
+    background-size: auto 42%;
     display: block;
     position: absolute;
     width: 100%;
@@ -209,10 +209,10 @@
   
   div.links :nth-child(3):after{
     content: "";
-    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/ModerniHduMail.png);
-    background-position: 50% 45%;
+    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/Mail_b.png);
+    background-position: 50% 40%;
     background-repeat: no-repeat;
-    background-size: auto 40%;
+    background-size: auto 55%;
     display: block;
     position: absolute;
     top: 0;
@@ -267,10 +267,10 @@
   
   div[appid~="1142"] a.app_btn_gray_name:after{
     content: "";
-    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/CSS.png);
+    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/CourceSelSys_b.png);
     background-position: 50% 40%;
     background-repeat: no-repeat;
-    background-size: auto 46%;
+    background-size: auto 45%;
     display: block;
     position: absolute;
     top: 0;
@@ -315,10 +315,10 @@
   
   div[appid~="4080"] a.app_btn_gray_name:after{
     content: "";
-    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/ModerniHduTuition.png);
-    background-position: 50% 40%;
+    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/Tuition_b.png);
+    background-position: 50% 42%;
     background-repeat: no-repeat;
-    background-size: auto 65%;
+    background-size: auto 45%;
     position: absolute !important;
     top: 0;
     display: block;
