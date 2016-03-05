@@ -2,8 +2,6 @@
 
 @-moz-document url-prefix("http://i.hdu.edu.cn/") {
   
-  
-  /*被隐藏的内容*/
   #header :not(.exit),
   #container,
   #homeMiddelBannerWidet-content,
@@ -32,10 +30,12 @@
   .margin_bottom_10,
   .margin_top_10,
   #outdiv,
-  #container
+  #container,
+  div.fancybox-bg
   {
     visibility: hidden  !important;
   }
+/*被隐藏的内容*/
   
   #header,
   #footer,
@@ -44,7 +44,8 @@
   {
     display: none;
   }
-
+/*  被隐藏的内容  */
+  
   #container_content
   {
     height: 0px !important;
@@ -52,10 +53,8 @@
     min-height: 0;
     min-width: 0;
   }
-  /*  减小页面宽度和高度  */
+/*  减小页面宽度和高度  */
   
-  
-  /*要显示的内容*/
   .user_name a,
   .meeting_notice_content,
   .quickhome_item_link font,
@@ -67,22 +66,21 @@
     visibility: visible !important;
     display: block !important;
   }
+/*要显示的内容*/
   
-/*   自定义Style开始 */
+/*>>>>>>>>>>>>>自定义Style开始<<<<<<<<<<<<<*/
   
   body{
     background-color: black;
     margin: 0px;
     padding: 0px !important;
-  } /*黑色背景*/
+  }
+/*  全局黑色背景  */
   
   div[appid~="1142"],
   div[appid~="4080"],
   li.unreadmail,
   div.meeting_notice_content
-  
-/*   #TRAIN li */
-  
   {
     visibility: visible !important;
     background-color: #0078d7;
@@ -95,17 +93,15 @@
     padding: 0 !important;
     border: none;
     top: 20%;
-  }/*  主磁贴*4  */
+  }
+/*  主磁贴*4  */
   
   
- /*  
-  *==================一卡通开始==================
-  */
+/*==================一卡通开始==================*/
   div.meeting_notice_content{
     left: 10%;
   }
 /*  主div  */
-  
   
   .number_blue,
   .span_gray_letter
@@ -118,7 +114,7 @@
     font-family: 黑体;
     color: black !important;
   }
-  /*  余额 XXX   元   */
+/*  余额 XXX   元   */
   
   .number_blue{
     position: absolute !important;
@@ -145,7 +141,6 @@
   }
 /*  点击元素  */
   
-  
   div a.sign_blue:after{
     content: "";
     background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/ModerniHduCampusCard.png);
@@ -158,20 +153,13 @@
     height: 100%;
     visibility: visible !important;
   }
- /*
-  *==================一卡通结束==================
-  */
+/*==================一卡通结束==================*/
   
-  
-  
-  
- /*  
-  *==================邮件开始==================
-  */
-  
+/*==================邮件开始==================*/
   li.unreadmail{
     left: 31%;
-  }/*  磁贴位置  */
+  }
+/*  磁贴位置  */
   
   div.count{
     position: absolute !important;
@@ -179,7 +167,8 @@
     bottom: 0;
     margin: 0 !important;
     padding: 0 !important;
-  }/*  未读计数位置  */
+  }
+/*  未读计数位置  */
   
   
   span.highlight{
@@ -190,8 +179,8 @@
     right: 0;
     margin: 0 !important;
     height: 1em;
-  }/*  强制设置计数字体和颜色  */
-  
+  }
+/*  强制设置计数字体和颜色  */
   
   span.label{
     position: absolute !important;
@@ -204,7 +193,8 @@
     width: 4em !important;
     bottom: 0.15em;
     right: 1.6em;
-  }/*    未读邮件 四字    */
+  }
+/*    未读邮件 四字    */
   
   
   div.links :nth-child(3)
@@ -214,7 +204,8 @@
     height: 100%;
     left: 0;
     color: rgba(0,0,0,0) !important;
-  }/*  点击元素  */
+  }
+/*  点击元素  */
   
   div.links :nth-child(3):after{
     content: "";
@@ -230,16 +221,9 @@
     visibility: visible !important;
   }
   
+/*==================邮件结束==================*/
   
- /*  
-  *==================邮件结束==================
-  */
-  
-  
-  
- /*  
-  *==================选课系统开始==================
-  */
+/*==================选课系统开始==================*/
   div.app_btn_gray,
   div.app_btn_white{
     background: none !important;
@@ -264,11 +248,10 @@
     width: 100%;
     height: 100%;
   }
-/**  
-  *原来的a标签，需要利用它的链接，但不易改变文字位置。故构造一个儿子，令它的儿子显示文字标签。
-  *a标签自身近提供点击功能
-  *
-  **/
+/*  
+  原来的a标签，需要利用它的链接，但不易改变文字位置。故构造一个儿子，令它的儿子显示文字标签。
+  a标签自身近提供点击功能
+  */
   
   div[appid~="1142"] a.app_btn_gray_name:before{
     content: "选课系统";
@@ -296,23 +279,15 @@
     height: 100%;
     visibility: visible !important;
   }
+/*==================选课系统结束==================*/
   
-  
- /*  
-  *==================选课系统结束==================
-  */
-  
- /*  
-  *==================银校通开始==================
-  */
-  
+/*==================银校通开始==================*/
   div[appid~="4080"]
   {
     left: 73%;
     background-color: #0078d7 !important;
-  }/*  系统磁贴  */
-  
-  
+  }
+/*  系统磁贴  */
   
   a[appid~="4080"]{
     background: none;
@@ -325,9 +300,7 @@
     width: 100%;
     height: 100%;
   }
-/*  原来的a标签，需要利用它的链接，但不易改变文字位置。故构造一个儿子，令它的儿子显示文字标签。
-    a标签自身近提供点击功能
-  */
+/*  原来的a标签  */
   
   div[appid~="4080"] a.app_btn_gray_name:before{
     content: "银校通";
@@ -355,15 +328,9 @@
     height: 100%;
     visibility: visible !important;
   }
+/*==================银校通结束==================*/
   
- /*  
-  *==================银校通结束==================
-  */
-  
- /*  
-  *==================自定义链接开始==================
-  */
-  
+/*==================自定义链接开始==================*/
   #TRAIN {
     position: absolute !important;
     margin: 0;
@@ -375,12 +342,10 @@
     width: 90%;
     display: block;
   }
-  
+/*  自定义链接的容器  */
   
   #TRAIN li
-/*   ,#TRAIN:before */
   {
-    content: "()";
     float: left;
     position: relative;
     background-color: #0078d7;
@@ -393,20 +358,28 @@
     padding: 0;
     border: none;
   }
+/*  设置磁贴大小间距以及颜色  */
   
   #TRAIN li a{
     position: absolute;
     font-family: 黑体;
-    bottom: 0.4em;
-    right: 0.8em;
+    bottom: 0em;
+    right: 0em;
     margin: 0;
     padding: 0;
   }
+/*  设置磁贴字体  */
   
-  #TRAIN li a font {
+  #TRAIN  li a font:nth-child(1){
     font-size: 150%;
+    position: absolute;
     color: black;
+    right: 0.5em;
+    bottom: 0.5em;
+    width: 5em;
+    text-align: right;
   }
+/*  磁贴文字位置  */
   
   #TRAIN li:after{
     content: " . ";
@@ -418,43 +391,38 @@
     width: 10px;
     background-color: #0078d7;
   }
+/*  遮住讨厌的灰点  */
+  
   
   #TRAIN > li a.quickhome_item_link{
-    text-decoration: none;
-    content: "()";
-    position: absolute !important;
     width: 100%;
     height: 100%;
   }
-  
-  #TRAIN > li a font{
-    position: absolute;
-    bottom: 0.3em;
-    right: 0.1em;
-  }
+/*  提供点击功能  */
   
   p.quickhome_item_close {
-    transition: 0.4s;
-    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
     margin: 0;
     background-image: none;
     width: 20%;
     height: 20%;
-    transition: 0.4s;
+    z-index: 10 !important;
   }
+/*  “移除” 按钮  */
   
   p.quickhome_item_close:hover:after{
-    transition: 0.4s;
     content: "移除";
     position: absolute;
-    top: 0.3em;
-    right: 0.6em;
     font-family: 黑体;
     font-size: 125%;
     color: black;
+    z-index: 10 !important;
   }
+/*  “移除” 的 hover属性  */
   
-/*  ==========添加按钮开始==========  */
+/*==================添加按钮开始==================*/
   
   span.quick_title_right{
     visibility: visible;
@@ -469,11 +437,13 @@
     transition: 0.4s;
     z-index:7;
   }
+/*  下方的菜单横条，未激活状态  */
   
   span.quick_title_right:hover{
     height: 16%;
-    background-color:  #003366;
+    background-color:  #0055aa;
   }
+/*  横条的激活状态  */
   
   #addTrain{
     font-family: 黑体;
@@ -487,7 +457,7 @@
     left: 5%;
     color: rgba(0,0,0,0) !important;
   }
-  
+/*  添加 按钮的点击功能，以及外框  */
   
   #addTrain:after{
     position: absolute;
@@ -500,6 +470,7 @@
     text-align: center;
     color: black;
   }
+/*  加号  */
   
   #addTrain:before{
     content: "添加";
@@ -509,11 +480,9 @@
     bottom: 0.5em;
     right: calc( 50% - 1em );
   }
+/*  “添加” 二字  */
+/*==================自定义链接结束==================*/
   
-  
- /*  
-  *==================自定义链接结束==================
-  */
   .user_name a{
     text-decoration: none;
     font-weight: normal;
@@ -523,11 +492,122 @@
     top:8%;
     right: 9%;
   }/*  用户名  */
-  
 
-  a.exit{
-    visibility: visible !important;
-    display: block !important;
-    background-color: white;
+  
+/*==================Metro样式添加对话框==================*/
+  #fancybox-content,
+  #fancybox-content > div:nth-child(1),
+  div.album_popup_p{
+    color: black;
+    font-family: 黑体;
+    font-size: 120%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 23% !important;
+    min-width: 330px;
+    height: 100% !important;
+    background-color: #0055aa;
+    border: none !important;
+    padding: 0;
   }
+/*  侧边竖条  */
+  
+  div.popup_header_9{
+    visibility: hidden;
+  }
+/*  隐藏原添加对话框的图标及文字  */
+  
+  div.popup_header_9:after{
+    color: white;
+    content: "添加链接";
+    visibility: visible;
+    position: absolute;
+    top: 2em;
+    left: 3em;
+  }
+/*  新的 “添加链接” 四字  */
+  
+  div.popup_header:not(.popup_header_9),
+  div.album_popup_item{
+    color: white;
+    visibility: visible;
+    background: none;
+    margin: 8px;
+    top: 50%;
+    padding: 5% 0 0 5%;
+  }
+/*  设置输入区的提示文字颜色及边距  */
+  
+  div.popup_header:nth-child(2),div.album_popup_item{
+    top: 4%;
+    position: relative;
+  }
+/*  输入区域定位  */
+  
+  #NAME,#URL{
+    z-index: 10 !important;
+  }
+/*  防止输入框无法输入  */
+  
+  #fancybox-close{
+    position: fixed;
+    top: 3.5em;
+    right: 23em;
+  }
+/*  “关闭” 按钮  */
+  
+  .album_popup_input{
+    position: absolute;
+    width: 60%;
+  }
+/*  输入框宽度  */
+  
+  p[name~="msgbox"]
+  {
+    background: none !important;
+    border: none !important;
+    font-size: 70%;
+  }
+/*  “名称不能为空！” 的提示文字  */
+  
+  #fancy_ok{
+    font-size: 85%;
+    position: absolute;
+    border: 2px solid white;
+    background: none !important;
+    width: 25%;
+    height: 1.55em;
+    top: 28%;
+    right: 68%;
+  }
+/*  确定 按钮  */
+ 
+  div.popup_header_14{
+    visibility: hidden;
+  }
+/*  隐藏原来 “操作成功” 的图片  */
+  
+  span.span_margin_left:after{
+    visibility: visible !important;
+    position: absolute;
+    top: 1em;
+    left: 0.5em;
+    content: "操作成功";
+    font-size: 200%;
+    color: white;
+  }
+/*  新的 “操作成功” 提示  */
+  
+  #fancybox-wrap{
+    visibility: hidden;
+  }
+/*  隐藏闪现的对话框  */
+  
+  #fancybox-content,#fancybox-close{
+    visibility: visible;
+  }
+/*  不应被隐藏的主要元素  */
+  
 }
+>>>>>>> d8b7c883235b562599aed732c9cff191bf02d892
