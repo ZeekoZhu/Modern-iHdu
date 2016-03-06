@@ -84,7 +84,7 @@
   div.meeting_notice_content
   {
     visibility: visible !important;
-    background-color: #0078d7;
+    background-color:#0078D7;
     width: 18% !important;
     min-width: 120px;
     height: 20% !important;
@@ -93,7 +93,7 @@
     margin: 0 !important;
     padding: 0 !important;
     border: none;
-    top: 20%;
+    top: 20% !important;
   }
 /*  主磁贴*4  */
   
@@ -113,7 +113,7 @@
     position: absolute !important;
     font-size: 150%;
     font-family: 黑体;
-    color: white !important;
+    color: #FFFFFF !important;
   }
 /*  余额 XXX   元   */
   
@@ -138,13 +138,14 @@
     width: 100%;
     height: 100%;
     color: rgba(0,0,0,0) !important;
-    background-color: #0078d7;
+    background-color: #0078D7;
   }
 /*  点击元素  */
   
   div a.sign_blue:after{
     content: "";
-    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/CampusCard_w.png);
+    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/CampusCard_w.png
+);
     background-position: 50% 20%;
     background-repeat: no-repeat;
     background-size: auto 42%;
@@ -173,7 +174,7 @@
   
   
   span.highlight{
-    color: white !important;
+    color: #FFFFFF !important;
     font-family: 黑体;
     position: absolute !important;
     top: 0;
@@ -190,7 +191,7 @@
     margin: 0 !important;
     font-size: 150% !important;
     font-family: 黑体;
-    color: white !important;
+    color: #FFFFFF !important;
     width: 4em !important;
     bottom: 0.15em;
     right: 1.6em;
@@ -210,7 +211,8 @@
   
   div.links :nth-child(3):after{
     content: "";
-    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/Mail_w.png);
+    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/Mail_w.png
+);
     background-position: 50% 40%;
     background-repeat: no-repeat;
     background-size: auto 55%;
@@ -232,8 +234,8 @@
   
   div[appid~="1142"]
   {
-    left: 52%;
-    background-color: #0078d7 !important;
+    left: 52% !important;
+    background-color: #0078D7 !important;
      vertical-align: bottom !important;
   }/*  系统磁贴  */
   
@@ -260,7 +262,7 @@
     position: absolute;
     bottom: 0.2em;
     right: 0.5em;
-    color: white;
+    color: #FFFFFF;
     font-size: 150%;
     font-family: 黑体;
   }
@@ -268,7 +270,8 @@
   
   div[appid~="1142"] a.app_btn_gray_name:after{
     content: "";
-    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/CourceSelSys_w.png);
+    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/CourceSelSys_w.png
+);
     background-position: 50% 40%;
     background-repeat: no-repeat;
     background-size: auto 45%;
@@ -284,8 +287,8 @@
 /*==================银校通开始==================*/
   div[appid~="4080"]
   {
-    left: 73%;
-    background-color: #0078d7 !important;
+    left: 73% !important;
+    background-color: #0078D7 !important;
   }
 /*  系统磁贴  */
   
@@ -308,7 +311,7 @@
     position: absolute;
     bottom: 0.2em;
     right: 0.5em;
-    color: white;
+    color: #FFFFFF;
     font-size: 150%;
     font-family: 黑体;
   }
@@ -316,7 +319,8 @@
   
   div[appid~="4080"] a.app_btn_gray_name:after{
     content: "";
-    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/Tuition_w.png);
+    background-image: url(http://7xrawc.com1.z0.glb.clouddn.com/Tuition_w.png
+);
     background-position: 50% 42%;
     background-repeat: no-repeat;
     background-size: auto 45%;
@@ -348,7 +352,7 @@
   {
     float: left;
     position: relative;
-    background-color: #0078d7;
+    background-color: #0078D7;
     width: 19.95% !important;
     min-width: 120px;
     height: 40%;
@@ -373,7 +377,7 @@
   #TRAIN  li a font:nth-child(1){
     font-size: 150%;
     position: absolute;
-    color: white;
+    color: #FFFFFF;
     right: 0.5em;
     bottom: 0.5em;
     width: 5em;
@@ -384,12 +388,12 @@
   #TRAIN li:after{
     content: " . ";
     display: block;
-    color: #0078d7;
+    color: #0078D7;
     position: absolute;
     top: 0;
     left: 0;
     width: 10px;
-    background-color: #0078d7;
+    background-color: #0078D7;
   }
 /*  遮住讨厌的灰点  */
   
@@ -417,7 +421,7 @@
     position: absolute;
     font-family: 黑体;
     font-size: 125%;
-    color: white;
+    color: #FFFFFF;
     z-index: 10 !important;
   }
 /*  “移除” 的 hover属性  */
@@ -432,7 +436,7 @@
     width: 100%;
     height: 16%;
     background-color:rgba(0,85,170,0.5);
-    color: white;
+    color: #FFFFFF;
     font-size: 150%;
     transition: 0.4s;
     z-index:7;
@@ -450,7 +454,7 @@
     font-family: 黑体;
     position: absolute;
     background-color: rgba(255,255,255,0);
-    border: 2px solid white;
+    border: 2px solid #FFFFFF;
     height: 84.5%;
     max-height: 130px;
     width: 8%;
@@ -470,14 +474,14 @@
     content: "+";
     font-size: 500%;
     text-align: center;
-    color: white;
+    color: #FFFFFF;
   }
 /*  加号  */
   
   #addTrain:before{
     content: "添加";
     text-decoration: none;
-    color: white !important;
+    color: #FFFFFF !important;
     position: absolute;
     bottom: 0.5em;
     right: calc( 50% - 1em );
@@ -500,7 +504,7 @@
   #fancybox-content,
   #fancybox-content > div:nth-child(1),
   div.album_popup_p{
-    color: white;
+    color: #FFFFFF;
     font-family: 黑体;
     font-size: 120%;
     position: fixed;
@@ -515,13 +519,23 @@
   }
 /*  侧边竖条  */
   
+  #fancybox-outer{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 23% !important;
+    min-width: 330px;
+    height: 100% !important;
+  }
+  
+  
   div.popup_header_9{
     visibility: hidden;
   }
 /*  隐藏原添加对话框的图标及文字  */
   
   div.popup_header_9:after{
-    color: white;
+    color: #FFFFFF;
     content: "添加链接";
     visibility: visible;
     position: absolute;
@@ -532,7 +546,7 @@
   
   div.popup_header:not(.popup_header_9),
   div.album_popup_item{
-    color: white;
+    color: #FFFFFF;
     visibility: visible;
     background: none;
     margin: 8px;
@@ -553,9 +567,9 @@
 /*  防止输入框无法输入  */
   
   #fancybox-close{
-    position: fixed;
-    top: 3.5em;
-    right: 23em;
+    position: absolute !important;
+    left: 7%;
+    top: 3.6em;
   }
 /*  “关闭” 按钮  */
   
@@ -575,13 +589,13 @@
   
   #fancy_ok{
     font-size: 85%;
-    position: absolute;
-    border: 2px solid white;
+    position: relative;
+    border: 2px solid #FFFFFF;
     background: none !important;
-    width: 25%;
+    width: 80px;
     height: 1.55em;
-    top: 28%;
-    right: 68%;
+    top: 40px;
+    left: -230px;
   }
 /*  确定 按钮  */
  
@@ -597,7 +611,7 @@
     left: 0.5em;
     content: "操作成功";
     font-size: 200%;
-    color: white;
+    color: #FFFFFF;
   }
 /*  新的 “操作成功” 提示  */
   
