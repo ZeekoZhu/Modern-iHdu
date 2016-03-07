@@ -70,7 +70,7 @@
   
   body{
     background-color: #333333;
-    background-image: url(http://pic.sucaibar.com/pic/201307/19/9ac1babed4.jpg);
+    background-image: url(/*[[picurl]]*/);
 /*     background-repeat: no-repeat; */
 /*     background-size: 75%; */
     margin: 0px;
@@ -488,7 +488,7 @@
   .user_name a{
     text-decoration: none;
     font-weight: normal;
-    color: #aaaaaa !important;
+    color: /*[[namecolor]]*/ !important;
     font-size: 200%;
     position: fixed;
     top:8%;
