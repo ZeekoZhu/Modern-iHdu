@@ -2,6 +2,8 @@
 ---
 通过浏览器的 Stylish 插件拯救数字杭电惨不忍睹的主页
 
+`Modern iHdu.css` 此文件为托管在 [userstyles.org](https://userstyles.org) 上的源码，需要替换注释后方可使用；
+`Modern iHdu Defult.css` 文件为默认配置文件，直接复制到 Stylish 编辑器中即可使用。
 
 ##特点
 - Modern 磁贴风格，强化移动设备交互体验
